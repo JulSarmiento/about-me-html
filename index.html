@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="assets/styles/styles.css">
-    <title>Document</title>
+    <title>Algo que me gusta</title>
   </head>
 
   <body>
@@ -16,10 +16,10 @@
       <h2><small>Semillero</small></h2>
 
       <nav>
-        <ul>
+        <ul class="header__navbar">
           <li ><a href="navbar">Inicio</a></li>
           <li> <a href="#aboutme">About me</a> </li>
-          <li ><a href="#videogames">Videojuegos</a> </li>
+          <li ><a href="#videogames">Videojuegos</a> </li> 
           <li ><a href="#cooking">Cocina</a></li>
           <li><a href="#watercolors">Acuarelas</a></li>
           <li><a href="#contactme">Contact Me</a></li>
@@ -27,47 +27,54 @@
       </nav>
     </header>
 
-    <h1>holis</h1>
+    <h1 class="title">Mis Hobbies</h1>
     
-    <!-- About Me-->
-    <section id="aboutme">
-
-      <h2>Acerca de mi</h2>
-      <div>
-        <img src="./assets/imgs/Perfil.jpg" alt="Foto de mi">
-        <p>A continuación compartiré temáticas que me gustan: </p>
-      </div>
-
-    </section>
-
     <!-- VideoJuegos -->
-    <section id="videogames">
+    <section id="videogames" class="wrapper">
 
-      <h2>VideoJuegos</h2>
+      <h2 class="subtitle">VideoJuegos</h2>
 
-      <div>
-        <article>
-          <p><em>Spyro</em></p>
+      <div class="articles__container">
+
+        <article class="articles__item">
+          <p class="articles__item--title">Spyro</p>
           <img src="./assets/imgs/spyro.jpeg" alt="Imagen del videojuego Spyro">
-          <p>Spyro: Reignited Trilogy es el nuevo juego remasterizado y rehecho desde cero de la clásica trilogía de videojuegos de plataformas en tres dimensiones de Spyro lanzados originalmente para la primera consola PlayStation. Gracias a Activision y Toys for Bob, este nuevo título nos presentará en gráficos de Alta Definición los tres primeros juegos del dragón morado en PlayStation 4 y Xbox One. Se comercializará el 21 de septiembre.</p>
+          <p  class="articles__item--text">
+            Spyro: Reignited Trilogy es el nuevo juego remasterizado y rehecho desde cero de la clásica trilogía de videojuegos de plataformas en tres dimensiones de Spyro lanzados originalmente para la primera consola PlayStation. 
+            <br>
+            <br>
+            Gracias a Activision y Toys for Bob, este nuevo título nos presentará en gráficos de Alta Definición los tres primeros juegos del dragón morado en PlayStation 4 y Xbox One. Se comercializará el 21 de septiembre.
+          </p>
         </article >
 
-        <article>
-          <p><em>Silent Hill</em></p>
+        <article class="articles__item">
+          <p class="articles__item--title">Silent Hill</p>
           <img src="./assets/imgs/silent-hill.jpg" alt="Imagen del videojuego Silent Hill">
-          <p>El juego cuenta la historia de Harry Mason, un escritor de 32 años que se adentra en una aventura cargada de terror y angustia mientras busca a su hija Cheryl Mason que ha desaparecido en esta pesadilla. Conforme el argumento avanza, nos enteramos que la búsqueda de Cheryl pasa a un segundo plano para enfocarnos en una misteriosa secta llamada La Orden la cual busca por medio de un ritual traer una deidad a la tierra.</p>
+          <p class="articles__item--text">
+            El juego cuenta la historia de Harry Mason, un escritor de 32 años que se adentra en una aventura cargada de terror y angustia mientras busca a su hija Cheryl Mason que ha desaparecido en esta pesadilla. 
+            <br>
+            <br>
+            Conforme el argumento avanza, nos enteramos que la búsqueda de Cheryl pasa a un segundo plano para enfocarnos en una misteriosa secta llamada La Orden la cual busca por medio de un ritual traer una deidad a la tierra.
+          </p>
         </article >
 
-        <article>
-          <p><em>Lucius</em></p>
+        <article class="articles__item">
+          <p class="articles__item--title">Lucius</p>
           <img src="./assets/imgs/lucius.jpg" alt="Imagen del videojuego Lucius">
-          <p>Lucius es un videojuego perteneciente al género de sigilo y terror psicológico, desarrollado por la empresa Shiver Games, y publicado por Lace Mamba Global para Microsoft Windows. Se centra en un niño de seis años de edad, quien es el hijo de Satanás.</p>
+          <p class="articles__item--text">
+            Lucius es un videojuego perteneciente al género de sigilo y terror psicológico, desarrollado por la empresa Shiver Games, y publicado por Lace Mamba Global para Microsoft Windows. 
+            <br>
+            <br>
+            Se centra en un niño de seis años de edad, quien es el hijo de Satanás.
+          </p>
         </article >
 
-        <article>
-          <p><em>Red Dead Redemption 2</em></p>
+        <article class="articles__item">
+          <p class="articles__item--title">Red Dead Redemption 2</p>
           <img src="./assets/imgs/red-dead-redemption.jpeg" alt="Imagen del videojuego Red Dead Redemption 2">
-          <p>Red Dead Redemption 2, estilizado Red Dead Redemption II, es un videojuego de acción-aventura western basado en el drama, en un mundo abierto y en perspectiva de primera y tercera persona, ​ con componentes para un jugador y multijugador.​ Fue desarrollado por Rockstar Games.</p>
+          <p class="articles__item--text">
+            Red Dead Redemption 2, estilizado Red Dead Redemption II, es un videojuego de acción-aventura western basado en el drama, en un mundo abierto y en perspectiva de primera y tercera persona, con componentes para un jugador y multijugador. Fue desarrollado por Rockstar Games.
+          </p>
         </article >
 
       </div>
@@ -76,34 +83,47 @@
     </section>
 
     <!-- Cocina -->
-    <section id="cooking">
+    <section id="cooking" class="wrapper">
 
-      <h2>Preparaciones</h2>
+      <h2 class="subtitle">Preparaciones</h2>
       
-      <div>
+      <div class="articles__container">
 
-        <article>
-          <p><em>Langostinos Encocados</em></p>
+        <article class="articles__item">
+          <p class="articles__item--title">Langostinos Encocados</p>
           <img src="./assets/imgs/camarones-encocados.jpeg" alt="Foto de un plato de langostinos al ajillo">
-          <p>Receta preparada a base de una crema de coco con pimenton rojo, achiote y leche de coco recien licuado. Esta receta fue preparada para el concurso organizado por Portum Pesquera en el 2020.</p>
+          <p class="articles__item--text">
+            Receta preparada a base de una crema de coco con pimenton rojo, achiote y leche de coco recien licuado. Esta receta fue preparada para el concurso organizado por Portum Pesquera en el 2020.</p>
         </article >
 
-        <article>
-          <p><em>Atun Sellado con Costra de Ajonjoli</em></p>
+        <article class="articles__item">
+          <p class="articles__item--title">Atun Sellado con Costra de Ajonjoli</p>
           <img src="./assets/imgs/atun-con-sellado-con-constra-de-ajonjoli.jpeg" alt="Foto de un plato de atun sellado con costra de ajonjoli.">
-          <p>Esta receta requiere que el filete, sacado del lomo del atun de carne roja, quede a termino medio-azul. Tiene un estilo mas asiatico por los ingredientes como jengibre y aciete de semámo para conseguir que el sabor resalte y un la carne permanezca jugosa.</p>
+          <p class="articles__item--text">
+            Esta receta requiere que el filete, sacado del lomo del atun de carne roja, quede a termino medio-azul. 
+            <br>
+            <br>
+            Tiene un estilo mas asiatico por los ingredientes como jengibre y aciete de semámo para conseguir que el sabor resalte y un la carne permanezca jugosa.</p>
         </article >
 
-        <article>
-          <p><em>Camarones al Ajillo</em></p>
+        <article class="articles__item">
+          <p class="articles__item--title">Camarones al Ajillo</p>
           <img src="./assets/imgs/camarones-al-ajillo-arroz-con-curcuma.jpeg" alt="Foto de un plato de camarones al ajillo con arroz de curcuma.">
-          <p>Esta preparacion clásica y sencilla permite resaltar la crocancia y la frescura de los camarones y el sabor marcado que tiene el ajo y la mantequilla. Pese a ser una receta bastante sencilla, siempre destacará por su elegancia. Es perfecta para las pastas.</p>
+          <p class="articles__item--text">
+            Esta preparacion clásica y sencilla permite resaltar la crocancia y la frescura de los camarones y el sabor marcado que tiene el ajo y la mantequilla. 
+            <br>
+            <br>
+            Pese a ser una receta bastante sencilla, siempre destacará por su elegancia. Es perfecta para las pastas.</p>
         </article >
 
-        <article>
-          <p><em>Salmon Asado en Sarten de hierro esmaltado</em></p>
+        <article class="articles__item">
+          <p class="articles__item--title">Salmon Asado en Sarten de hierro esmaltado</p>
           <img src="./assets/imgs/salmon-asado-ensalda-ceasar.jpeg" alt="Foto de un plato de salmon ahumado.">
-          <p>Esta preparacion es bastante sencilla, se debe respetar que la carne del salmon no pase de una coccion superior al término tres cuarto para conservar la jugosiad en su histerior. Como el salmón tiene un sabor tan marcado, queda perfecto para ser resaltado tanto con verduras asadas como, en este caso, con una ensalda ceasar basada en yogurt griedo y no es mayonesa.</p>
+          <p class="articles__item--text">
+            Esta preparacion es bastante sencilla, se debe respetar que la carne del salmon no pase de una coccion superior al término tres cuarto para conservar la jugosiad en su histerior. 
+            <br>
+            <br>
+            Como el salmón tiene un sabor tan marcado, queda perfecto para ser resaltado tanto con verduras asadas como, en este caso, con una ensalda ceasar basada en yogurt griedo y no es mayonesa.</p>
         </article >
         
       </div>
@@ -111,28 +131,31 @@
     </section>
 
     <!-- Acuarela -->
-    <section id="watercolors">
+    <section id="watercolors" class="wrapper">
 
-      <h2>Acuarelas</h2>
+      <h2 class="subtitle">Acuarelas</h2>
       
-      <div>
+      <div class="articles__container">
 
-        <article>
-          <p><em>Mega Audfino</em></p>
+        <article class="articles__item">
+          <p class="articles__item--title">Mega Audfino</p>
           <img src="./assets/imgs/mega-audino.jpeg" alt="Foto de una acuarela de pokemon">
-          <p>Acuarela realizada con pigmentos profesionales de Winsor & Newton y pigmentos artesanles profesionales por Diatomeas.</p>
+          <p class="articles__item--text">
+            Acuarela realizada con pigmentos profesionales de Winsor & Newton y pigmentos artesanles profesionales por Diatomeas.</p>
         </article >
 
-        <article>
-          <p><em>Mega Altaria</em></p>
-          <img src="./assets/imgs/mega-altaria.jpeg" alt="Foto de una acuarela de pokemon">
-          <p>Acuarela realizada con pigmentos profesionales de Winsor & Newton y pigmentos artesanles profesionales por Diatomeas.</p>
+        <article class="articles__item">
+          <p class="articles__item--title">Mega Altaria</p>
+          <img class="img" src="./assets/imgs/mega-altaria.jpeg" alt="Foto de una acuarela de pokemon">
+          <p class="articles__item--text">
+            Acuarela realizada con pigmentos profesionales de Winsor & Newton y pigmentos artesanles profesionales por Diatomeas.</p>
         </article >
 
-        <article >
-          <p><em>Mismagius</em></p>
+        <article class="articles__item">
+          <p class="articles__item--title">Mismagius</p>
           <img src="./assets/imgs/mismagius.jpeg" alt="Foto de una acuarela de pokemon">
-          <p>Acuarela realizada con pigmentos profesionales de Winsor & Newton y pigmentos artesanles profesionales por Diatomeas.</p>
+          <p class="articles__item--text">
+            Acuarela realizada con pigmentos profesionales de Winsor & Newton y pigmentos artesanles profesionales por Diatomeas.</p>
         </article >
 
       </div>
@@ -142,7 +165,7 @@
     <!-- Conctact me / footer -->
     <footer id="contactme">
 
-      <ul >
+      <ul class="contactme">
         <li><a href="https://instagram.com/studycorndev?igshid=YmMyMTA2M2Y=">Instagram</a></li>
         <li><a href="https://github.com/JulSarmiento">Github</a></li>
         <li><a href="https://www.linkedin.com/in/julieth-sarmiento/">LinkedIn</a></li>
